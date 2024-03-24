@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style></style>
+    <title>UI Tutoring</title>
+  </head>
+
+  <body>
+    <header class="assistant-.regular">
+      <a href="#" class="logo">
+        <table>
+          <tr>
+            <td><img src="resources/UI Tutoring PNG.png" /></td>
+            <td
+              style="
+                font-family: 'Assistant', sans-serif;
+                letter-spacing: 2.5px;
+                color: #1e3706;
+                font-weight: bolder;
+                font-size: 22px;
+              "
+            >
+              UI TUTORING
+            </td>
+          </tr>
+        </table>
+      </a>
+
+      <input type="checkbox" id="menu-bar" />
+      <label for="menu-bar"> Menu </label>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="">HOME</a></li>
+
+          <li><a href="">ABOUT</a></li>
+
+          <li>
+            <a href="">COURSES</a>
+            <ul>
+              <li><a href="">COURSE 1</a></li>
+              <li><a href="">COURSE 2</a></li>
+              <li><a href="">COURSE 3</a></li>
+              <li><a href="">COURSE 4</a></li>
+              <li><a href="">COURSE 5</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="">MEMBERS</a>
+            <ul>
+              <li><a href="">TUTORS</a></li>
+              <li><a href="">TUTOR SIGNUP</a></li>
+              <li><a href="">TUTEE SIGNUP</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="">CONTACTS</a>
+            <ul>
+              <li><a href="">SOCIAL MEDIA</a></li>
+              <li><a href="">POSTS</a></li>
+              <li><a href="">HELPS</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div style="background-color: #e7e9ec">
+      <table style="width: 100%">
+        <tr>
+          <td style="width: 50%; vertical-align: top">
+            <img
+              src="resources/UI Tutoring Shadow PNG (Cropped).png"
+              height="750px"
+              width="auto"
+              style="margin-left: 100px"
+            />
+          </td>
+          <td
+            style="
+              width: 50%;
+              vertical-align: top;
+              padding-left: 50px;
+              text-align: left;
+              vertical-align: middle;
+            "
+          >
+            <h2
+              style="
+                font-family: 'Tenor Sans', sans-serif;
+                font-size: 50px;
+                font-weight: 300;
+                padding-bottom: 50px;
+              "
+            >
+              INTRO?
+            </h2>
+            <p
+              style="
+                font-family: 'Assistant', sans-serif;
+                letter-spacing: 2px;
+                font-weight: 600;
+              "
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta
+              laoreet enim, sit amet cursus neque vulputate ac. Fusce sem ante,
+              mollis vitae mollis eu, cursus at elit. Integer lobortis et diam a
+              sodales. Quisque semper purus leo, sed convallis turpis mollis
+              quis.. (wat ev text)
+            </p>
+            <br><br>
+            <button><a href="#secret" style="text-decoration: none;">EXPLORE MORE</a></button>
+          </td>
+        </tr>
+      </table>
+      
+        <section id = "secret" style="margin-top: 200%;">
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <p style="text-align: center;">secret msg</p>
+        </section>
+
+    </div>
+  </body>
+
+  <script>
+    document.addEventListener("scroll", () => {
+      const header = document.querySelector("header");
+      if (window.scrollY > 0) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    const scroll = new SmoothScroll('a[href*="#"]');{
+        speed: 800
+    }
+  </script>
+</html>

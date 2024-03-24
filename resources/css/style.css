@@ -1,0 +1,212 @@
+.tenor-sans-regular {
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Assistant';
+    src: url('path/to/your/Assistant.woff2') format('woff2'),
+         url('path/to/your/Assistant.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: "Assistant", sans-serif;
+    text-decoration: none;
+}
+ body{
+    background-color: #FAF9F8;
+    margin: 0;
+
+    
+ }
+
+ header{
+    background-color: #E7E9EC;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0; left:0; right:0;
+    padding: 20px 7%;;
+    justify-content: space-between;
+    transition: background-color 0.4s ease-in-out;
+    z-index: 1000;
+ }
+
+ header.scrolled{
+    background-color: #bcbdbe;
+    opacity: 0.98;
+ }
+ header nav{
+    padding: 1.5em 0 1.5em 5em;
+ }
+
+ header nav ul li a{
+    text-decoration: none;
+    color: #1E3706;
+    font-size: 1.3em;
+    margin: 1em;
+    transition: color 0.4s ease-in-out;
+    font-family: 'Assistant', sans-serif; 
+    letter-spacing: 2.5px;  }
+
+header.scrolled nav ul li a{
+    font-family: 'Assistant', sans-serif; 
+    letter-spacing: 2.5px; }
+
+ div {
+    height: 6000px;
+    padding: 2em 6em 2em 6em;
+ }
+
+ p{
+    font-size: 1.4em;
+    color: #1E3706;
+ }
+
+ header .navbar ul{
+    padding-bottom: 10%;
+    list-style: none;
+ }
+
+ header .navbar ul li{
+    position: relative;
+    float: left;
+ }
+
+ header .navbar ul li a{
+    font-size: 19px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #1E3706;
+    display: block;
+    font-family: 'Assistant', sans-serif; 
+    letter-spacing: 2.5px; 
+    font-weight: bolder;
+ }
+
+ header .navbar ul li a:hover{
+    background: #FAF9F8; width: max-content;
+    color: #1E3706;
+
+ }
+
+ header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background:#FAF9F8 ;
+    display: none;
+ }
+
+ header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+#menu-bar{
+    display: none;
+}
+
+header label{
+    font-size: 20px;
+    color:#1E3706;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:1260px){
+    header{
+        padding: 20px;
+    }
+    header label{
+        display: initial;
+        
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0; 
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,.1);
+    }
+
+    header .navbar ul li {
+        width: 100% ;
+    }
+
+    header .navbar ul li ul {
+       position: relative ;
+       width: 100%; 
+    }
+
+    header .navbar ul li ul li{
+        background: #eee;
+
+    }
+
+    header .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+        
+    }
+
+    #menu-bar:checked ~.navbar{
+        display: initial;
+    }
+}
+.logo img {
+    position: absolute;
+    top: -15px;
+    left: 35px;
+    width: 7%;
+    height: auto;
+    margin: 2px;
+
+}
+
+button, button:active {
+    text-align: center;
+    border: none;
+    color: #FAF9F8; /* this is the text color */
+    background-color: #ACB5AF;
+    font-size: 23px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    font-family: 'Assistant', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+button:active {
+    background-color: #ACB5AF;
+    color: #FAF9F8; /* this is the text color for the active state */
+}
+
+a, a:active {
+    color: #FAF9F8;
+    text-decoration: none;
+}
+
+a:active {
+    color: #FAF9F8;
+}
